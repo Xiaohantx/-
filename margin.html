@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>双飞燕 - margin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    footer {
+      width: 100%;
+      line-height: 30px;
+      text-align: center;
+      background: gray;
+    }
+
+    .left,
+    .main,
+    .right {
+      line-height: 200px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      background: green;
+    }
+
+    .left {
+      float: left;
+      width: 300px;
+      background: red;
+      margin-left: -100%;
+    }
+
+    .right {
+      float: left;
+      width: 300px;
+      background: yellow;
+      margin-left:-300px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <div class="main">main</div>
+  <div class="left">left</div>
+  <div class="right">right</div>
+  <footer>footer</footer>
+</body>
+
+</html>
